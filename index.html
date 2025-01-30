@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess a Number and the AI Based on Your Strats, Beat the AI</h1>
+        <p class="subtitle">Beta 1.8</p>
+        <input type="number" id="numberInput" placeholder="Enter a number (1-100)" min="1" max="100">
+        <div class="output">
+            <div class="numbers-list">
+                <h2>Numbers:</h2>
+                <div id="numbersDisplay"></div>
+            </div>
+            <div class="tracked-list">
+                <h2>Tracked Numbers:</h2>
+                <div id="trackedNumbers"></div>
+            </div>
+        </div>
+        <div id="aiGuess">
+            <h2>AI Guess: <span id="aiGuessValue">-</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
